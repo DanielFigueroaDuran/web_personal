@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  user-select: none;
+}
+
+.logo span {
+  color: #2091f9;
+}
+
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scalex(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #000;
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 50% 95%, 0 80%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main {
+  margin: 0 auto;
+  width: 80vw;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2em;
+}
+
+h1 {
+  font-size: 3em;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.texts span {
+  color: #2091f9;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.testimony_container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px; /*Creamos 3 columnas dos de 50px  y 1fr se refiere al espacio sobrante*/
+  gap: 1em;
+  align-items: center;
+}
+
+.testimony_body {
+  display: grid;
+  grid-template-columns: 1fr max-content; /* con este codigo colocamos la caja de texto de 1 fraccion  con la imagen*/
+  justify-content: space-between; /*el contenido se vaya a las esquinas*/
+  align-items: center; /*centre verticalmente*/
+  gap: 2em; /*este codigo me separa las letras de la foto que esta al lado */
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.testimony_texts {
+  max-width: 700px;
+}
+
+.testimony_course {
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+}
+
+.testimony_rewiew {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* ------Portafolio---------- */
+.portfolio,
+.contact-section {
+  width: 100vw;
+  background-color: #e5e5f7;
+  color: #fff;
+}
+
+.portfolio-heading {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio-heading h2 {
+  margin-top: 100px;
+  font-size: 2.5em;
+  color: #000;
+  text-align: center;
+}
+
+.portfolio .container1 {
+  width: 80vw;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 400px;
+  background-color: #2091f9;
+  margin: 1em;
+}
+
+.card__img1 {
+  width: 100%;
+  height: 200px;
+  background-image: url("../assets/proyectos/pagina_mana.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__title {
+  margin: 0 80px 10px 50px;
+
+  text-align: center;
+}
+
+.card__img2 {
+  width: 100%;
+  height: 200px;
+  background-image: url("../assets/proyectos/gallery.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card__img3 {
+  width: 100%;
+  height: 200px;
+  background-image: url("../assets/proyectos/periodico.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container2 {
+  width: 80%;
+  height: 400px;
+  margin: auto;
+}
+
+.card {
+  margin: auto;
+}
+
+.vid {
+  width: 110%;
+  height: 200px;
+  background-size: cover;
+}
+
+.footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+.footer p {
+  margin: 0;
+  text-align: center;
+}

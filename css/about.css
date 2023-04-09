@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --padding-container: 100px 0;
+  --color-title: #01050e;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: var(--padding-container);
+}
+
+.active {
+  background-color: #7f8c8d;
+  opacity: 0.9;
+  font-size: 20px;
+}
+
+li a:hover:not(.active) {
+  background-color: #7f8c8d;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  max-height: 800px;
+  position: relative;
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  color: #fff;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+    url("../assets/img/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 81%, 50% 95%, 0 80%);
+  z-index: -1;
+}
+
+/*------------ NAV------*/
+
+.nav {
+  --padding-container: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.nav_title {
+  font-weight: 300;
+}
+
+.nav_link {
+  margin-left: auto;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  gap: 2rem;
+}
+
+.nav_items {
+  list-style: none;
+}
+
+.nav_links {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Hero Container */
+
+.hero_container {
+  max-width: 800px;
+  --padding-container: 0;
+  display: grid;
+  grid-auto-rows: max-content;
+  align-content: center;
+  gap: 1rem;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.hero_title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 3rem;
+}
+
+.hero_paragraph {
+  margin-bottom: 20px;
+}
+
+.cta {
+  display: inline-block;
+  background-color: #2091f9;
+  justify-self: center;
+  color: #fff;
+  text-decoration: none;
+  padding: 13px 30px;
+  border-radius: 32px;
+}
+
+.subtitle {
+  --color: var(--color-title);
+  font-size: 2rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.about_paragraph {
+  font-size: 20px;
+  text-align: center;
+}
+/* ----------------card----------------- */
+
+.testimony {
+  background-color: #e5e5f7;
+}
+
+.testimony_body {
+  display: grid;
+  grid-template-columns: 1fr max-content; /* con este codigo colocamos la caja de texto de 1 fraccion  con la imagen*/
+  justify-content: space-between; /*el contenido se vaya a las esquinas*/
+  align-items: center; /*centre verticalmente*/
+  gap: 2em; /*este codigo me separa las letras de la foto que esta al lado */
+}
+
+.testimony_img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+.texts {
+  max-width: 700px;
+}
+
+.testimony_course {
+  color: #fff;
+  display: inline-block;
+  padding: 5px;
+}
+
+.footer {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+.footer p {
+  margin: 0;
+  text-align: center;
+}

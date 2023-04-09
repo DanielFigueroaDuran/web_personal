@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="shorcut icon"
+      href="../assets/logos/icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/contacto.css" />
+  </head>
+  <body>
+    <header>
+      <h2 class="logo"></h2>
+      <nav class="navigation">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./portafolio.html">Portafolio</a>
+        <a href="contac.html">Contacto</a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="form-box">
+        <h2>Deja tu Comentario</h2>
+        <form action="">
+          <div class="input-box">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Nombre.." />
+          </div>
+          <div class="input-box">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Email.." />
+          </div>
+          <div class="input-box">
+            <label for="tel">Telefono:</label>
+            <input type="tel" id="tel" name="tel" placeholder="telefono.." />
+          </div>
+          <div class="input-box">
+            <label for="comentarios">Comentarios:</label>
+            <textarea
+              name="comentarios"
+              cols="30"
+              rows="10"
+              required
+              placeholder="Some text..."
+            ></textarea>
+          </div>
+          <div class="input-box">
+            <p>Seleciona</p>
+            <select id="opcion" name="opcion" required>
+              <option value="profesional">Profesional</option>
+              <option value="persona">Persona</option>
+              <option value="Puplicidad">Puplicidad</option>
+              <option value="otros" selected>Otros</option>
+            </select>
+          </div>
+          <p class="opcion">Quieres recibir respuesta:</p>
+          <input type="radio" name="respuesta" id="si" value="si" />
+          <label for="si">Si</label>
+          <input type="radio" name="respuesta" id="no" value="no" />
+          <label for="no">No</label>
+
+          <div class="remember">
+            <label for="terminos">
+              <input type="checkbox" name="terminos" id="terminos" />
+              Acepto los terminos y condiciones.
+            </label>
+          </div>
+
+          <button type="submit" class="btn" value="Enviar">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
